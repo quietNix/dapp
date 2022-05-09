@@ -7,7 +7,8 @@ import { setUsername } from "../state/action";
 // Database
 export const db = Gun({
     peers: [
-        'http://localhost:3030/gun'
+        // 'http://localhost:3030/gun'
+        'https://quietnix-dapp.herokuapp.com/gun'
     ]
 });
 

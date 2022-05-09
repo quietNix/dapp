@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Chat from "./Chat";
+import "./global.scss";
 
 function App(params) {
   return(

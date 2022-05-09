@@ -6,13 +6,15 @@ function Login() {
     let username;
     let password;
 
+    //USER AUTHENTICATION
     function login() {
-        let username = document.getElementById("username").value;
+        let username = document.getElementById("username").value.toLowerCase();
         let password = document.getElementById("password").value;
         user.auth(username, password, ({ err }) => err && alert(err));
     }
 
     //enforce Uniqueness of user
+    //USER CREATION
     function signup() {
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
